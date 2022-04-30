@@ -14,7 +14,19 @@
     <header>
         <h1 class="page-title">Taskinator</h1>
         <p>Click the button to add a new task!</p>
-        <button class="btn" id="save-task"> Add task</button>
+        <form>
+            <div class="form-group">
+                <input type="text" name="task-name" placeholder="Enter task name" />
+                <select name="task-type" class="select-dropdown">
+                    <option value="" disabled selected>Pick a task type</option>
+                    <option value="print">Print</option>
+                    <option value="web">Web</option>
+                    <option value="mobile">Mobile</option>
+                </select>
+                <button class="btn" id="save-task" type="submit"> Add task</button>
+            </div>
+        </form>
+        
     </header>
 
     <main class="page-content">
